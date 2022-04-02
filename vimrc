@@ -14,7 +14,7 @@
 
 " VERIF PLUG -------------------------------------------------------------- {{{
 if empty(glob("~/.vim/autoload/plug.vim"))
-	" Ensure all needed directories exist  (Thanks @kapadiamush)
+	" Ensure all needed directories exist
 	execute '!mkdir -p ~/.vim/plugged'
 	execute '!mkdir -p ~/.vim/autoload'
 
@@ -38,6 +38,8 @@ call plug#begin('~/.vim/plugged')
  Plug 'airblade/vim-gitgutter'
  Plug 'sainnhe/sonokai'
  Plug 'Xuyuanp/nerdtree-git-plugin'
+ Plug 'lervag/vimtex'
+ Plug 'mattn/emmet-vim'
 call plug#end()
 
 "}}}
@@ -53,12 +55,15 @@ set autoread
 " Display whitespace characters
 set list
 set listchars=tab:>─,eol:¬,trail:\ ,nbsp:¤
-
 set laststatus=2
+
 colorscheme sonokai
-set nu          "Display line number
-set autoindent  "AutoIndent
+" Display line number
+set nu
+" AutoIndent
+set autoindent  
 set smartindent
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -66,7 +71,7 @@ set cc=80
 set encoding=utf-8
 set cursorline
 set wildmode=list:longest
-syntax on
+syntax enable
 set foldmethod=marker
 packadd! termdebug
 set hlsearch
@@ -74,6 +79,7 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set mouse=a
 set incsearch
 set backspace=indent,eol,start
+let g:vimtex_view_method = 'zathura'
 
 " }}}
 
@@ -141,8 +147,8 @@ inoremap <C-z> <esc>:u<cr>
 nnoremap <C-z> :u<cr>
 inoremap <C-w> <esc>:w<cr>
 nnoremap <C-w> :w<cr>
-inoremap <C-q> <esc>:wq!<cr>
-nnoremap <C-q> :wq!<cr>
+inoremap <C-q> <esc>:q!<cr>
+nnoremap <C-q> :q!<cr>
 nnoremap <C-1> :NERDTreeToggle<CR>
 silent! unmap <C-k>
 map <silent> <C-k> :call ClangFormat()<CR>
