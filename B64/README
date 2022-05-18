@@ -1,8 +1,0 @@
-﻿Instructions to use the B64 software:
--go into the B64 folder
--type ./main {command} {text}
-
-{command}: two commands are available: -e to encode
-		                        -d to decode
-
-{text}: the text to decrypt/encrypt
