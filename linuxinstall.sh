@@ -30,3 +30,6 @@ cp ./vimrc ~/.vimrc
 
 cp ./zshrc ~/.zshrc
 source ~/.zshrc
+
+apt install tree
+apt install bat

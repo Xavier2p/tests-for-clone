@@ -1,3 +1,3 @@
 install :
 	chmod u+x linuxinstall.sh
-	./linuxinstall.sh
+	sudo ./linuxinstall.sh
