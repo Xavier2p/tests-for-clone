@@ -33,3 +33,28 @@ source ~/.zshrc
 
 apt install tree
 apt install bat
+
+:'
+bat
+tree
+htop
+ranger
+cpufetch
+neofetch
+vim
+sl
+cmatrix
+cbonsai
+git
+curl
+nmap
+python
+rust
+opam
+ncdu
+zsh
+lsd
+lolcat
+speedtest-cli
+
+'
