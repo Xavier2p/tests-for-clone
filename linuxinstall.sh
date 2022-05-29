@@ -24,37 +24,27 @@ done
 shift "$((OPTIND - 1))"
 
 cp ./bashrc ~/.bashrc
-source ~/.bashrc
 
 cp ./vimrc ~/.vimrc
 
 cp ./zshrc ~/.zshrc
-source ~/.zshrc
 
+apt install make
 apt install tree
-apt install bat
-
-:'
-bat
-tree
-htop
-ranger
-cpufetch
-neofetch
-vim
-sl
-cmatrix
-cbonsai
-git
-curl
-nmap
-python
-rust
-opam
-ncdu
-zsh
-lsd
-lolcat
-speedtest-cli
-
-'
+apt install htop
+apt install ranger
+apt install cpufetch
+apt install neofetch
+apt install vim
+apt install sl
+apt install cmatrix
+apt install cbonsai
+apt install git
+apt install curl
+apt install nmap
+apt install opam
+apt install ncdu
+apt install zsh
+apt install lsd
+apt install lolcat
+apt install speedtest-cli
